@@ -1,8 +1,8 @@
+<!-- Music Player Pro - Copyright 2026, Ethan Vekved -->
 <!DOCTYPE html>
-<!-- saved from url=(0052)file:///Users/kitkat.v/Downloads/preview%20(37).html -->
 <html lang="en"><head>
 <meta charset="UTF-8">
-<title>Music Player PRO (FULL RESTORE + DRAG DROP)</title>
+<title>Music Player Pro</title>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet">
@@ -418,14 +418,14 @@ Without Him
 
 /* FULL SONG LIST RESTORED */
 const songs = [
-{title:"Without Him",artists:[{name:"Steven Curtis Chapman",link:"#"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/2009110/Without_Him_YTDLCH_Steven_Curtis_Chapman_Mp3_128kbps.mp3"},
-{title:"Keep It Simple",artists:[{name:"Forrest Frank",link:"#"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/3261285/Keep_It_Simple_YTDLPY_Forrest_Frank_Mp3_128kbps.mp3"},
-{title:"At The Zoo",artists:[{name:"Simon & Garfunkel",link:"#"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/4173552/At_The_Zoo_YTDLPY_Simon_Garfunkel_Mp3_128kbps.mp3"},
-{title:"Gravity",artists:[{name:"Shawn McDonald",link:"#"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/4643315/Gravity_YTDLPY_Shauwn_McDonald_Mp3_128kbps.mp3"},
-{title:"No Longer Bound",artists:[{name:"Forrest Frank",link:"#"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/5723224/No_Longer_Bound_YTDLPY_Forrest_Frank_And_Hulvey_Mp3_128kbps.mp3"},
-{title:"Possibility Bells",artists:[{name:"Ryan Lott",link:"#"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/5787972/Possibility_Bells_YTDLPY_Ryan_Lott_Mp3_128kbps.mp3"},
-{title:"Hideaway",artists:[{name:"Grace VanderWaal",link:"#"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/6228346/Hideaway_YTDLPY_Grace_VanderWaal_Mp3_128kbps.mp3"},
-{title:"Runaway",artists:[{name:"AURORA",link:"#"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/7982111/Runaway_YTDLPY_Aurora_Mp3_128kbps.mp3"}
+{title:"Without Him",artists:[{name:"Steven Curtis Chapman",link:"https://en.wikipedia.org/wiki/Steven_Curtis_Chapman"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/2009110/Without_Him_YTDLCH_Steven_Curtis_Chapman_Mp3_128kbps.mp3"},
+{title:"Keep It Simple",artists:[{name:"Forrest Frank",link:"https://en.wikipedia.org/wiki/Forrest_Frank"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/3261285/Keep_It_Simple_YTDLPY_Forrest_Frank_Mp3_128kbps.mp3"},
+{title:"At The Zoo",artists:[{name:"Simon & Garfunkel",link:"https://en.wikipedia.org/wiki/Simon_%26_Garfunkel"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/4173552/At_The_Zoo_YTDLPY_Simon_Garfunkel_Mp3_128kbps.mp3"},
+{title:"Gravity",artists:[{name:"Shawn McDonald",link:"https://en.wikipedia.org/wiki/Shawn_McDonald"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/4643315/Gravity_YTDLPY_Shauwn_McDonald_Mp3_128kbps.mp3"},
+{title:"No Longer Bound",artists:[{name:"Forrest Frank",link:"https://en.wikipedia.org/wiki/Forrest_Frank"},{name:"Hulvey",link:"https://en.wikipedia.org/wiki/Hulvey"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/5723224/No_Longer_Bound_YTDLPY_Forrest_Frank_And_Hulvey_Mp3_128kbps.mp3"},
+{title:"Possibility Bells",artists:[{name:"Ryan Lott",link:"https://en.wikipedia.org/wiki/Ryan_Lott"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/5787972/Possibility_Bells_YTDLPY_Ryan_Lott_Mp3_128kbps.mp3"},
+{title:"Hideaway",artists:[{name:"Grace VanderWaal",link:"https://en.wikipedia.org/wiki/Grace_Vanderwaal"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/6228346/Hideaway_YTDLPY_Grace_VanderWaal_Mp3_128kbps.mp3"},
+{title:"Runaway",artists:[{name:"AURORA",link:"https://en.wikipedia.org/wiki/Aurora_(singer)"}],url:"https://res.cloudinary.com/ethanvekved-server2/video/upload/school/8/2/guitar/projects/chordsong/media/7982111/Runaway_YTDLPY_Aurora_Mp3_128kbps.mp3"}
 ];
 
 let queue = JSON.parse(localStorage.getItem("queue") || "[]");
